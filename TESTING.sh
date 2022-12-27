@@ -1,0 +1,17 @@
+rm TEST.test; make; sleep 1; clear; ./tips_parse unit_tests/input1.pas >> TEST.test ; diff TEST.test unit_tests/input1.correct;
+sleep 2;
+rm TEST.test; make; sleep 1; clear; ./tips_parse unit_tests/input2.pas >> TEST.test ; diff TEST.test unit_tests/input2.correct;
+sleep 2;
+rm TEST.test; make; sleep 1; clear; ./tips_parse unit_tests/input3.pas >> TEST.test ; diff TEST.test unit_tests/input3.correct;
+sleep 2;
+rm TEST.test; make; sleep 1; clear; ./tips_parse unit_tests/input4.pas >> TEST.test ; diff TEST.test unit_tests/input4.correct;
+sleep 2;
+rm TEST.test; make; sleep 1; clear; ./tips_parse unit_tests/error.pas >> TEST.test ; diff TEST.test unit_tests/error.correct;
+sleep 2;
+rm TEST.test; make; sleep 1; clear; ./tips_parse unit_tests/error2.pas >> TEST.test ; diff TEST.test unit_tests/error2.correct;
+sleep 2;
+rm TEST.test; make; sleep 1; clear; ./tips_parse unit_tests/if_sample.pas >> TEST.test ; diff TEST.test unit_tests/if_sample.correct;
+sleep 2;
+rm TEST.test; make; sleep 1; clear; ./tips_parse unit_tests/while_sample.pas >> TEST.test ; diff TEST.test unit_tests/while_sample.correct;
+sleep 2;
+rm TEST.test; make; sleep 1; clear; ./tips_parse unit_tests/not_sample.pas >> TEST.test ; diff TEST.test unit_tests/not_sample.correct;
